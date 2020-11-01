@@ -47,3 +47,9 @@ LilycoveCity_Harbor_Text_18B58E:: @ 818B58E
 	.string "The folks at the SHIPYARD in SLATEPORT\n"
 	.string "must've worked extra hard.\p"
 	.string "Well, it's my turn to get busy now!$"
+
+LilycoveCity_Harbor_Text_TicketInspectorGreeting::
+	.string "Hello! And welcome to the\n"
+	.string "LILYCOVE CITY harbor!\p"
+	.string "This ferry goes to SLATEPORT CITY.\n"
+	.string "Would you like to go?$"

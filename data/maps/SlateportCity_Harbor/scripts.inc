@@ -367,3 +367,24 @@ SlateportCity_Harbor_EventScript_156380:: @ 8156380
 	msgbox SlateportCity_Harbor_Text_180491, MSGBOX_DEFAULT
 	release
 	end
+
+SlateportCity_Harbor_EventScript_TicketInspector::
+	msgbox SlateportCity_Harbor_Text_TicketInspectorGreeting, MSGBOX_YESNO
+	compare VAR_RESULT, NO
+	goto_if_eq SlateportCity_Harbor_EventScript_1561DA
+	waitmessage
+	goto SlateportCity_Harbor_EventScript_LilycoveYesNoNotChampion
+	release
+	end
+
+SlateportCity_Harbor_EventScript_LilycoveYesNoNotChampion:: @ 815613F
+	msgbox SlateportCity_Harbor_Text_17FB81, MSGBOX_YESNO
+	compare VAR_RESULT, NO
+	goto_if_eq SlateportCity_Harbor_EventScript_1561DA
+	setvar VAR_PORTHOLE_STATE, 1
+	call SlateportCity_Harbor_EventScript_156196
+	warp MAP_SS_TIDAL_CORRIDOR, 255, 1, 10
+	waitstate
+	release
+	end
+

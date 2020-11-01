@@ -164,3 +164,24 @@ LilycoveCity_Harbor_EventScript_159AA2:: @ 8159AA2
 	msgbox LilycoveCity_Harbor_Text_18B58E, MSGBOX_DEFAULT
 	release
 	end
+
+LilycoveCity_Harbor_EventScript_TicketInspector::
+	msgbox LilycoveCity_Harbor_Text_TicketInspectorGreeting, MSGBOX_YESNO
+	compare VAR_RESULT, NO
+	goto_if_eq LilycoveCity_Harbor_EventScript_1599E4
+	waitmessage
+	goto LilycoveCity_Harbor_EventScript_LilycoveYesNoNotChampion
+	release
+	end
+
+LilycoveCity_Harbor_EventScript_LilycoveYesNoNotChampion:: @ 8159933
+	msgbox LilycoveCity_Harbor_Text_18B47D, MSGBOX_YESNO
+	compare VAR_RESULT, NO
+	goto_if_eq LilycoveCity_Harbor_EventScript_1599E4
+	setvar VAR_PORTHOLE_STATE, 5
+	call LilycoveCity_Harbor_EventScript_15998A
+	warp MAP_SS_TIDAL_CORRIDOR, 255, 1, 10
+	waitstate
+	release
+	end
+
