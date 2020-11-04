@@ -29,6 +29,7 @@ RustboroCity_Gym_EventScript_15793C:: @ 815793C
 	compare VAR_RESULT, 0
 	goto_if_eq Common_EventScript_ShowBagIsFull
 	setflag FLAG_RECEIVED_TM39
+	call RustboroGym_GiveDestOpener
 	msgbox RustboroCity_Gym_Text_184170, MSGBOX_DEFAULT
 	release
 	end
