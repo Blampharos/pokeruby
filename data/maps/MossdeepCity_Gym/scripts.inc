@@ -72,6 +72,7 @@ MossdeepCity_Gym_EventScript_15A5C6:: @ 815A5C6
 	goto_if_eq Common_EventScript_ShowBagIsFull
 	msgbox MossdeepCity_Gym_Text_18D1CF, MSGBOX_DEFAULT
 	setflag FLAG_RECEIVED_TM04
+	call MossdeepGym_GiveDestOpener
 	release
 	end
 

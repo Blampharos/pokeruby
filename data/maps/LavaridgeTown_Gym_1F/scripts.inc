@@ -88,6 +88,7 @@ LavaridgeTown_Gym_1F_EventScript_1537A7:: @ 81537A7
 	goto_if_eq Common_EventScript_ShowBagIsFull
 	msgbox LavaridgeTown_Gym_1F_Text_176B8F, MSGBOX_DEFAULT
 	setflag FLAG_RECEIVED_TM50
+	call LavaridgeGym_GiveDestOpener
 	release
 	end
 

@@ -111,6 +111,7 @@ SootopolisCity_Gym_1F_EventScript_15B056:: @ 815B056
 	goto_if_eq Common_EventScript_ShowBagIsFull
 	msgbox SootopolisCity_Gym_1F_Text_18F466, MSGBOX_DEFAULT
 	setflag FLAG_RECEIVED_TM03
+	call SootopolisGym_GiveDestOpener
 	release
 	end
 

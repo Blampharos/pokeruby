@@ -98,6 +98,7 @@ MauvilleCity_Gym_EventScript_15661D:: @ 815661D
 	goto_if_eq Common_EventScript_ShowBagIsFull
 	msgbox MauvilleCity_Gym_Text_180E76, MSGBOX_DEFAULT
 	setflag FLAG_RECEIVED_TM34
+	call MauvilleGym_GiveDestOpener
 	release
 	end
 

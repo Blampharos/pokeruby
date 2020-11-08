@@ -123,6 +123,7 @@ DewfordTown_Gym_EventScript_1531B5:: @ 81531B5
 	goto_if_eq Common_EventScript_ShowBagIsFull
 	msgbox DewfordTown_Gym_Text_1753BF, MSGBOX_DEFAULT
 	setflag FLAG_RECEIVED_TM08
+	call DewfordGym_GiveDestOpener
 	release
 	end
 

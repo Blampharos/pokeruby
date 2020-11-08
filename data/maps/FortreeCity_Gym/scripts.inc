@@ -40,6 +40,7 @@ FortreeCity_Gym_EventScript_157F3E:: @ 8157F3E
 	goto_if_eq Common_EventScript_ShowBagIsFull
 	msgbox FortreeCity_Gym_Text_185F4A, MSGBOX_DEFAULT
 	setflag FLAG_RECEIVED_TM40
+	call FortreeGym_GiveDestOpener
 	release
 	end
 

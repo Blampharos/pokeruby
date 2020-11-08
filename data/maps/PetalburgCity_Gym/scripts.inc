@@ -406,6 +406,7 @@ PetalburgCity_Gym_EventScript_154A2C:: @ 8154A2C
 	compare VAR_RESULT, 0
 	goto_if_eq Common_EventScript_ShowBagIsFull
 	setflag FLAG_RECEIVED_TM42
+	call PetalburgGym_GiveDestOpener
 	msgbox PetalburgCity_Gym_Text_17A8CF, MSGBOX_DEFAULT
 	msgbox PetalburgCity_Gym_Text_17A976, MSGBOX_DEFAULT
 	closemessage
