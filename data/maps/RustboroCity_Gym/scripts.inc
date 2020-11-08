@@ -16,7 +16,8 @@ RustboroCity_Gym_EventScript_1578FE:: @ 81578FE
 	setflag FLAG_DEFEATED_RUSTBORO_GYM
 	setflag FLAG_BADGE01_GET
 	setvar VAR_RUSTBORO_STATE, 1
-	addvar VAR_PETALBURG_GYM_STATE, 1
+	@addvar VAR_PETALBURG_GYM_STATE, 1
+	setvar VAR_PETALBURG_GYM_STATE, 6
 	setvar VAR_0x8008, 1
 	call Common_EventScript_SetGymTrainers
 	compare VAR_PETALBURG_GYM_STATE, 6
