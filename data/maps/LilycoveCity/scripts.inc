@@ -27,7 +27,7 @@ LilycoveCity_MapScript1_14CA3F:: @ 814CA3F
 	setmetatile 71, 6, METATILE_General_CalmWater, 0
 	setmetatile 72, 6, METATILE_General_Shore_BottomLeft, 0
 	.endif
-	call_if_unset FLAG_EVIL_TEAM_ESCAPED_IN_SUBMARINE, LilycoveCity_EventScript_14CABE
+	@call_if_unset FLAG_EVIL_TEAM_ESCAPED_IN_SUBMARINE, LilycoveCity_EventScript_14CABE
 	call_if_set FLAG_BADGE07_GET, LilycoveCity_EventScript_14CB2B
 	end
 
