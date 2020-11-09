@@ -9,7 +9,7 @@
   "map_type": "MAP_TYPE_INDOOR",
   "show_map_name": false,
   "battle_scene": "MAP_BATTLE_SCENE_GYM",
-  "connections": null,
+  "connections": 0,
   "object_events": [
     {
       "graphics_id": "OBJ_EVENT_GFX_WALLACE",
@@ -22,7 +22,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "SootopolisCity_Gym_1F_EventScript_15AFFF",
-      "flag": "FLAG_HIDE_WALLACE_SOOTOPOLIS_GYM"
+      "flag": "0"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_MAN_2",
@@ -61,7 +61,9 @@
       "dest_warp_id": 0
     }
   ],
-  "coord_events": [],
+  "coord_events": [
+
+  ],
   "bg_events": [
     {
       "type": "sign",
